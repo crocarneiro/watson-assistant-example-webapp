@@ -159,7 +159,7 @@ class App extends Component {
                             <Typography
                                 variant="caption"
                                 color="primary">
-                                Background: Image by <a className={classes.link} href="https://pixabay.com/users/peri_priatna-8463731/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3407787">Peri Priatna</a> from <a className={classes.link} href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3407787">Pixabay</a>
+                                Background image by <a className={classes.link} href="https://pixabay.com/users/peri_priatna-8463731/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3407787">Peri Priatna</a> from <a className={classes.link} href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3407787">Pixabay</a>
                             </Typography>
                         </React.Fragment>
                     }
