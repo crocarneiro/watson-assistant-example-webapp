@@ -42,8 +42,6 @@ export default class Request {
     }
 
     async get() {
-        console.log('Fazendo requisição GET para a URL "' + this.url + '".');
-
         try {
             const responseType = (!this._responseType) ? defaultResponseType : this._responseType;
             const response = await axios.get(this.url, {
@@ -58,8 +56,6 @@ export default class Request {
     }
 
     async post(body) {
-        console.log('Fazendo requisição POST para a URL "' + this.url + '". Corpo da requisição: ', JSON.stringify(body));
-
         try {
             const response = await axios.post(this.url, JSON.stringify(body), {
                 headers: this.headers,
@@ -73,8 +69,6 @@ export default class Request {
     }
 
     async postAsItIs(body) {
-        console.log('Fazendo requisição POST para a URL "' + this.url + '". Corpo da requisição: ', body);
-
         const response = await axios.post(this.url, body, {
             headers: this.headers,
             responseType: defaultResponseType
@@ -84,8 +78,6 @@ export default class Request {
     }
 
     async delete() {
-        console.log('Fazendo requisição DELETE para a URL "' + this.url + '".');
-
         const response = await axios.delete(this.url, {
             headers: this.headers,
             responseType: defaultResponseType
@@ -95,8 +87,6 @@ export default class Request {
     }
 
     async put(body) {
-        console.log('Fazendo requisição PUT para a URL "' + this.url + '". Corpo da requisição: ', JSON.stringify(body));
-
         const response = await axios.put(this.url, JSON.stringify(body), {
             headers: this.headers,
             responseType: defaultResponseType
@@ -106,8 +96,6 @@ export default class Request {
     }
 
     async patch(body) {
-        console.log('Fazendo requisição PATCH para a URL "' + this.url + '". Corpo da requisição: ', JSON.stringify(body));
-
         const response = await axios.patch(this.url, JSON.stringify(body), {
             headers: this.headers,
             responseType: defaultResponseType
@@ -117,7 +105,6 @@ export default class Request {
     }
 
     async downloadFileFromWebAs(responseType) {
-        console.log(`Fazendo requisição GET para a URL "${this.url}"`);
         const response = await axios.get(this.url, { responseType: responseType });
         return response.data;
     }
