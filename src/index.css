@@ -6,6 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/images/animal-3407787_1920.png");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 code {
